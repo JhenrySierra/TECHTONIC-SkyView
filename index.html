@@ -3840,6 +3840,17 @@
               bgVideo.play().catch(err => console.log("Video play loop error:", err));
             }
           });
+
+          // iOS Autoplay / Low Power Mode Fallback Trigger
+          const playVideoOnInteraction = () => {
+            if (bgVideo.paused) {
+              bgVideo.play().catch(err => console.log("Mobile autoplay override failed:", err));
+            }
+            window.removeEventListener("touchstart", playVideoOnInteraction);
+            window.removeEventListener("click", playVideoOnInteraction);
+          };
+          window.addEventListener("touchstart", playVideoOnInteraction, { passive: true });
+          window.addEventListener("click", playVideoOnInteraction, { passive: true });
         }
       });
 
