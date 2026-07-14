@@ -1,0 +1,10 @@
+{
+  "name": "techtonic-skyview",
+  "version": "1.0.0",
+  "description": "TECHTONIC SkyView static site with Vercel serverless function",
+  "private": true,
+  "scripts": {
+    "start": "echo \"No start script needed for static deployment\""
+  },
+  "dependencies": {}
+}
