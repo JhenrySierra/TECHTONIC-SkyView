@@ -2128,12 +2128,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="hero-bg-container">
-        <iframe class="hero-bg-video" 
-                src="https://www.youtube.com/embed/BHtRVxq1z9Q?autoplay=1&mute=1&loop=1&playlist=BHtRVxq1z9Q&controls=0&showinfo=0&rel=0&playsinline=1&enablejsapi=1&vq=hd1080" 
-                frameborder="0" 
-                allow="autoplay; encrypted-media" 
-                allowfullscreen>
-        </iframe>
+        <div id="hero-youtube-video" class="hero-bg-video"></div>
       </div>
       <div class="hero-content">
         <div class="hero-subtitle">Videografía Inmobiliaria Profesional</div>
@@ -3947,6 +3942,55 @@
         if (statsSection) observer.observe(statsSection);
       }
 
+      // YouTube Iframe Player API for seamless loop and autoplay
+      let ytPlayer;
+
+      function onYouTubeIframeAPIReady() {
+        ytPlayer = new YT.Player('hero-youtube-video', {
+          videoId: 'BHtRVxq1z9Q',
+          playerVars: {
+            'autoplay': 1,
+            'mute': 1,
+            'controls': 0,
+            'showinfo': 0,
+            'rel': 0,
+            'loop': 1,
+            'playlist': 'BHtRVxq1z9Q',
+            'playsinline': 1,
+            'vq': 'hd1080',
+            'iv_load_policy': 3,
+            'autohide': 1,
+            'disablekb': 1,
+            'fs': 0
+          },
+          events: {
+            'onReady': (event) => {
+              event.target.mute();
+              event.target.playVideo();
+              
+              // Poll the current time to perform a seamless loop before the video officially ends
+              // (avoids the black/dark screen loading transition of standard looping)
+              setInterval(() => {
+                if (ytPlayer && typeof ytPlayer.getCurrentTime === 'function' && typeof ytPlayer.getDuration === 'function') {
+                  const duration = ytPlayer.getDuration();
+                  const currentTime = ytPlayer.getCurrentTime();
+                  if (duration > 0 && currentTime >= duration - 0.4) {
+                    ytPlayer.seekTo(0, true);
+                  }
+                }
+              }, 100);
+            },
+            'onStateChange': (event) => {
+              // Fallback just in case interval is delayed or video ends naturally
+              if (event.data === YT.PlayerState.ENDED) {
+                ytPlayer.seekTo(0, true);
+                ytPlayer.playVideo();
+              }
+            }
+          }
+        });
+      }
+
       window.addEventListener("DOMContentLoaded", () => {
         calculateTimelinePositions();
         animateCounters();
@@ -4027,5 +4071,6 @@
         }
       }
     </script>
+    <script src="https://www.youtube.com/iframe_api" async></script>
   </body>
 </html>
