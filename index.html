@@ -16,14 +16,14 @@
       @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
 
       :root {
-        --bg-main: #070a13;
-        --bg-card: #0e1424;
-        --bg-card-hover: #131a2e;
-        --color-primary: #ff8041;
-        --color-primary-rgb: 255, 128, 65;
-        --color-primary-hover: #ff9862;
-        --color-primary-dark: #e66825;
-        --color-secondary: #0e1424;
+        --bg-main: #050c07;
+        --bg-card: #0a170d;
+        --bg-card-hover: #0f2616;
+        --color-primary: #d4af37;
+        --color-primary-rgb: 212, 175, 55;
+        --color-primary-hover: #e5c158;
+        --color-primary-dark: #aa7c11;
+        --color-secondary: #0a170d;
         --color-text-main: #e2e8f0;
         --color-text-muted: #94a3b8;
         --color-text-white: #ffffff;
@@ -36,25 +36,25 @@
         --shadow-gold: 0 8px 30px rgba(var(--color-primary-rgb), 0.1);
         --shadow-gold-large: 0 20px 50px rgba(var(--color-primary-rgb), 0.2);
 
-        --bg-header: rgba(7, 10, 19, 0.8);
-        --bg-header-scrolled: rgba(7, 10, 19, 0.95);
-        --bg-mobile-menu: rgba(7, 10, 19, 0.98);
-        --bg-input: rgba(7, 10, 19, 0.5);
-        --bg-modal: rgba(7, 10, 19, 0.85);
-        --bg-card-gradient: linear-gradient(135deg, rgba(14, 20, 36, 0.6) 0%, rgba(7, 10, 19, 0.8) 100%);
-        --bg-card-featured-gradient: linear-gradient(135deg, rgba(var(--color-primary-rgb), 0.04) 0%, rgba(7, 10, 19, 0.85) 100%);
-        --bg-contact-form: linear-gradient(135deg, rgba(14, 20, 36, 0.5) 0%, rgba(7, 10, 19, 0.7) 100%);
-        --bg-hero-overlay: linear-gradient(to bottom, rgba(7, 10, 19, 0.35) 0%, rgba(7, 10, 19, 0.75) 100%);
+        --bg-header: rgba(5, 12, 7, 0.8);
+        --bg-header-scrolled: rgba(5, 12, 7, 0.95);
+        --bg-mobile-menu: rgba(5, 12, 7, 0.98);
+        --bg-input: rgba(5, 12, 7, 0.5);
+        --bg-modal: rgba(5, 12, 7, 0.85);
+        --bg-card-gradient: linear-gradient(135deg, rgba(10, 23, 13, 0.6) 0%, rgba(5, 12, 7, 0.8) 100%);
+        --bg-card-featured-gradient: linear-gradient(135deg, rgba(var(--color-primary-rgb), 0.04) 0%, rgba(5, 12, 7, 0.85) 100%);
+        --bg-contact-form: linear-gradient(135deg, rgba(10, 23, 13, 0.5) 0%, rgba(5, 12, 7, 0.7) 100%);
+        --bg-hero-overlay: linear-gradient(to bottom, rgba(5, 12, 7, 0.35) 0%, rgba(5, 12, 7, 0.75) 100%);
       }
 
       body.light-theme {
         --bg-main: #f5f7fa;
         --bg-card: #ffffff;
         --bg-card-hover: #f1f5f9;
-        --color-primary: #e66825;
-        --color-primary-rgb: 230, 104, 37;
-        --color-primary-hover: #ff8041;
-        --color-primary-dark: #c35215;
+        --color-primary: #aa7c11;
+        --color-primary-rgb: 170, 124, 17;
+        --color-primary-hover: #d4af37;
+        --color-primary-dark: #8b6508;
         --color-secondary: #ffffff;
         --color-text-main: #1e293b;
         --color-text-muted: #64748b;
@@ -69,7 +69,7 @@
         --bg-card-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(241, 245, 249, 0.95) 100%);
         --bg-card-featured-gradient: linear-gradient(135deg, rgba(var(--color-primary-rgb), 0.08) 0%, rgba(255, 255, 255, 0.95) 100%);
         --bg-contact-form: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(241, 245, 249, 0.95) 100%);
-        --bg-hero-overlay: linear-gradient(to bottom, rgba(7, 10, 19, 0.35) 0%, rgba(7, 10, 19, 0.75) 100%);
+        --bg-hero-overlay: linear-gradient(to bottom, rgba(5, 12, 7, 0.35) 0%, rgba(5, 12, 7, 0.75) 100%);
       }
 
       * {
@@ -158,7 +158,7 @@
       }
       ::-webkit-scrollbar-thumb {
         background: rgba(var(--color-primary-rgb), 0.3);
-        border-radius: 5px;
+        border-radius: 2.5px;
         border: 2px solid var(--bg-main);
       }
       ::-webkit-scrollbar-thumb:hover {
@@ -171,14 +171,14 @@
         width: 100%;
         top: 0;
         z-index: 1000;
-        background: rgba(7, 10, 19, 0.8);
+        background: rgba(5, 12, 7, 0.8);
         backdrop-filter: blur(15px) saturate(180%);
         border-bottom: 1px solid rgba(var(--color-primary-rgb), 0.12);
         transition: var(--transition-smooth);
       }
 
       header.scrolled {
-        background: rgba(7, 10, 19, 0.95);
+        background: rgba(5, 12, 7, 0.95);
         border-bottom-color: rgba(var(--color-primary-rgb), 0.25);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       }
@@ -190,7 +190,7 @@
       }
 
       .theme-toggle-btn {
-        background: rgba(14, 20, 36, 0.4);
+        background: rgba(10, 23, 13, 0.4);
         border: 1px solid rgba(var(--color-primary-rgb), 0.12);
         color: var(--color-primary);
         width: 42px;
@@ -292,9 +292,9 @@
 
       .nav-links a.nav-contact-btn {
         background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-        color: #070a13;
+        color: #050c07;
         padding: 0.6rem 1.6rem;
-        border-radius: 50px;
+        border-radius: 12px;
         font-family: var(--font-heading);
         font-size: 0.85rem;
         font-weight: 700;
@@ -314,7 +314,7 @@
         transform: translateY(-2px);
         box-shadow: 0 8px 25px rgba(var(--color-primary-rgb), 0.45);
         background: linear-gradient(135deg, var(--color-primary-hover) 0%, var(--color-primary) 100%);
-        color: #070a13;
+        color: #050c07;
       }
 
       .nav-links a.nav-contact-btn::after {
@@ -487,7 +487,7 @@
       .btn {
         padding: 1.1rem 2.8rem;
         border: none;
-        border-radius: 50px;
+        border-radius: 12px;
         font-family: var(--font-heading);
         font-size: 1.05rem;
         font-weight: 600;
@@ -504,7 +504,7 @@
 
       .btn-primary {
         background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-        color: #070a13;
+        color: #050c07;
         box-shadow: 0 8px 30px rgba(var(--color-primary-rgb), 0.25);
       }
 
@@ -522,7 +522,7 @@
 
       .btn-secondary:hover {
         background: var(--color-primary);
-        color: #070a13;
+        color: #050c07;
         transform: translateY(-3px);
         box-shadow: 0 12px 30px rgba(var(--color-primary-rgb), 0.2);
       }
@@ -549,7 +549,7 @@
         width: 26px;
         height: 42px;
         border: 2px solid var(--color-primary);
-        border-radius: 20px;
+        border-radius: 10px;
         position: relative;
       }
 
@@ -557,7 +557,7 @@
         width: 4px;
         height: 8px;
         background-color: var(--color-primary);
-        border-radius: 2px;
+        border-radius: 1px;
         position: absolute;
         top: 8px;
         left: 50%;
@@ -640,7 +640,7 @@
 
       .service-card {
         background: var(--bg-card-gradient);
-        border-radius: 24px;
+        border-radius: 12px;
         padding: 3rem 2.5rem;
         border: 1px solid var(--border-color);
         transition: var(--transition-smooth);
@@ -694,6 +694,28 @@
         box-shadow: var(--shadow-gold-large);
       }
 
+      .service-card-image {
+        width: 100%;
+        height: 180px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 2;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .service-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition-smooth);
+      }
+
+      .service-card:hover .service-card-image img {
+        transform: scale(1.05);
+      }
+
       .service-icon-wrapper {
         margin-bottom: 2rem;
         color: var(--color-primary);
@@ -702,7 +724,7 @@
         justify-content: center;
         width: 70px;
         height: 70px;
-        border-radius: 18px;
+        border-radius: 9px;
         background: rgba(var(--color-primary-rgb), 0.08);
         border: 1px solid rgba(var(--color-primary-rgb), 0.2);
         transition: var(--transition-smooth);
@@ -712,7 +734,7 @@
 
       .service-card:hover .service-icon-wrapper {
         background: var(--color-primary);
-        color: #070a13;
+        color: #050c07;
         transform: scale(1.05) rotate(5deg);
       }
 
@@ -754,7 +776,7 @@
         border: 1px solid var(--border-color);
         color: var(--color-text-main);
         padding: 0.8rem 2rem;
-        border-radius: 50px;
+        border-radius: 12px;
         cursor: pointer;
         font-family: var(--font-heading);
         font-size: 0.95rem;
@@ -782,7 +804,7 @@
 
       .portfolio-item {
         position: relative;
-        border-radius: 24px;
+        border-radius: 12px;
         overflow: hidden;
         height: 380px;
         cursor: pointer;
@@ -827,8 +849,8 @@
         height: 100%;
         background: linear-gradient(
           to top,
-          rgba(7, 10, 19, 0.95) 0%,
-          rgba(7, 10, 19, 0.4) 60%,
+          rgba(5, 12, 7, 0.95) 0%,
+          rgba(5, 12, 7, 0.4) 60%,
           transparent 100%
         );
         z-index: 1;
@@ -838,8 +860,8 @@
       .portfolio-item:hover::after {
         background: linear-gradient(
           to top,
-          rgba(7, 10, 19, 0.98) 0%,
-          rgba(7, 10, 19, 0.6) 50%,
+          rgba(5, 12, 7, 0.98) 0%,
+          rgba(5, 12, 7, 0.6) 50%,
           rgba(var(--color-primary-rgb), 0.15) 100%
         );
       }
@@ -920,7 +942,7 @@
 
       .portfolio-play-btn:hover {
         background: var(--color-primary);
-        color: #070a13;
+        color: #050c07;
         box-shadow: var(--shadow-gold);
         transform: scale(1.1);
       }
@@ -941,7 +963,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background: rgba(7, 10, 19, 0.85);
+        background: rgba(5, 12, 7, 0.85);
         backdrop-filter: blur(12px);
         align-items: center;
         justify-content: center;
@@ -960,7 +982,7 @@
         max-width: 1000px;
         aspect-ratio: 16/9;
         background: #000;
-        border-radius: 20px;
+        border-radius: 10px;
         border: 1px solid var(--border-color);
         box-shadow: var(--shadow-gold-large);
         overflow: hidden;
@@ -1039,7 +1061,7 @@
       .local-fallback-card code {
         background: rgba(255, 255, 255, 0.08);
         padding: 0.2rem 0.4rem;
-        border-radius: 4px;
+        border-radius: 2px;
         font-family: monospace;
         color: var(--color-primary);
       }
@@ -1060,7 +1082,7 @@
 
       .package-card {
         background: var(--bg-card-gradient);
-        border-radius: 24px;
+        border-radius: 12px;
         padding: 4rem 2.8rem;
         border: 1.5px solid var(--border-color);
         transition: var(--transition-smooth);
@@ -1107,9 +1129,9 @@
         top: 25px;
         right: 25px;
         background: var(--color-primary);
-        color: #070a13;
+        color: #050c07;
         padding: 0.5rem 1.2rem;
-        border-radius: 50px;
+        border-radius: 12px;
         font-family: var(--font-heading);
         font-size: 0.75rem;
         font-weight: 700;
@@ -1283,7 +1305,7 @@
 
       .process-step.active .process-number {
         background: var(--color-primary);
-        color: #070a13;
+        color: #050c07;
         border-color: var(--color-primary);
         box-shadow:
           0 0 20px rgba(var(--color-primary-rgb), 0.4),
@@ -1296,7 +1318,7 @@
         background: var(--bg-card-gradient);
         border: 1px solid var(--border-color);
         padding: 2.2rem;
-        border-radius: 20px;
+        border-radius: 10px;
         transition: var(--transition-smooth);
       }
 
@@ -1358,7 +1380,7 @@
         text-align: center;
         padding: 2.2rem;
         background: var(--bg-card-gradient);
-        border-radius: 24px;
+        border-radius: 12px;
         border: 1px solid var(--border-color);
         transition: var(--transition-smooth);
       }
@@ -1397,7 +1419,7 @@
       .feature-item {
         padding: 2.2rem;
         background: var(--bg-card-gradient);
-        border-radius: 24px;
+        border-radius: 12px;
         border: 1px solid var(--border-color);
         transition: var(--transition-smooth);
       }
@@ -1444,7 +1466,7 @@
       .accordion-item {
         background: var(--bg-card-gradient);
         border: 1px solid var(--border-color);
-        border-radius: 20px;
+        border-radius: 10px;
         margin-bottom: 1.2rem;
         overflow: hidden;
         transition: var(--transition-smooth);
@@ -1517,7 +1539,7 @@
       .contact-form {
         background: var(--bg-contact-form);
         padding: 4rem 3.5rem;
-        border-radius: 28px;
+        border-radius: 14px;
         border: 1px solid var(--border-color);
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
       }
@@ -1533,7 +1555,7 @@
         width: 100%;
         padding: 1.3rem 1.2rem 0.7rem;
         border: 1px solid var(--border-color);
-        border-radius: 14px;
+        border-radius: 7px;
         background: var(--bg-input);
         color: var(--color-text-main);
         font-size: 1rem;
@@ -1618,7 +1640,7 @@
         margin-bottom: 2rem;
         padding: 1.8rem;
         background: var(--bg-card-gradient);
-        border-radius: 20px;
+        border-radius: 10px;
         border: 1px solid var(--border-color);
         transition: var(--transition-smooth);
         cursor: pointer;
@@ -1644,7 +1666,7 @@
         color: var(--color-primary);
         width: 60px;
         height: 60px;
-        border-radius: 16px;
+        border-radius: 8px;
         background: rgba(var(--color-primary-rgb), 0.08);
         display: flex;
         align-items: center;
@@ -1656,7 +1678,7 @@
 
       .contact-item:hover .contact-icon-wrapper {
         background: var(--color-primary);
-        color: #070a13;
+        color: #050c07;
         transform: scale(1.05);
       }
 
@@ -1717,7 +1739,7 @@
 
       /* Footer */
       footer {
-        background: #04060c;
+        background: #030804;
         border-top: 1px solid var(--border-color);
         padding: 6rem 2rem 3rem 2rem;
         color: var(--color-text-main);
@@ -1845,13 +1867,13 @@
         justify-content: center;
         color: var(--color-text-white);
         transition: var(--transition-smooth);
-        background: rgba(14, 20, 36, 0.4);
+        background: rgba(10, 23, 13, 0.4);
       }
 
       .footer-socials a:hover {
         border-color: var(--color-primary);
         background: var(--color-primary);
-        color: #070a13;
+        color: #050c07;
         transform: translateY(-3px);
         box-shadow: var(--shadow-gold);
       }
@@ -1939,7 +1961,7 @@
           left: -100%;
           width: 100%;
           height: calc(100vh - 80px);
-          background: rgba(7, 10, 19, 0.98);
+          background: rgba(5, 12, 7, 0.98);
           backdrop-filter: blur(15px);
           flex-direction: column;
           align-items: center;
@@ -2105,14 +2127,14 @@
     <section id="home" class="hero">
       <div class="hero-bg-container">
         <video class="hero-bg-video" autoplay muted loop playsinline>
-          <source src="./hero-bg.mp4" type="video/mp4">
+          <source src="./hero-bg-new.mp4" type="video/mp4">
         </video>
       </div>
       <div class="hero-content">
-        <div class="hero-subtitle">Videografía Inmobiliaria de Lujo</div>
+        <div class="hero-subtitle">Videografía Inmobiliaria Profesional</div>
         <h1><span class="logo-accent">S</span>KY <span class="logo-accent">V</span>IEW</h1>
         <p>
-          Cinematografía aérea premium y fotografía HDR para el sector inmobiliario exclusivo en República Dominicana. Elevamos el valor de sus villas, condominios y desarrollos comerciales con producciones cinematográficas en 4K.
+          Fotografía HDR y cinematografía aérea diseñadas para mostrar la arquitectura, el entorno y la esencia de cada propiedad. Una presentación visual que refleja el verdadero valor de cada espacio.
         </p>
         <div class="cta-buttons">
           <a href="#contact" class="btn btn-primary">Comenzar Proyecto</a>
@@ -2139,6 +2161,9 @@
       <div class="services-grid">
         <!-- Service 1 -->
         <div class="service-card glow-card">
+          <div class="service-card-image">
+            <img src="./service_videography.png" alt="Videografía Aérea" loading="lazy">
+          </div>
           <div class="service-icon-wrapper">
             <svg
               viewBox="0 0 24 24"
@@ -2165,6 +2190,9 @@
         </div>
         <!-- Service 2 -->
         <div class="service-card glow-card">
+          <div class="service-card-image">
+            <img src="./service_photography.png" alt="Fotografía Premium" loading="lazy">
+          </div>
           <div class="service-icon-wrapper">
             <svg
               viewBox="0 0 24 24"
@@ -2189,6 +2217,9 @@
         </div>
         <!-- Service 3 -->
         <div class="service-card glow-card">
+          <div class="service-card-image">
+            <img src="./service_tour360.png" alt="Recorridos Virtuales 360°" loading="lazy">
+          </div>
           <div class="service-icon-wrapper">
             <svg
               viewBox="0 0 24 24"
@@ -2212,6 +2243,9 @@
         </div>
         <!-- Service 4 -->
         <div class="service-card glow-card">
+          <div class="service-card-image">
+            <img src="./service_postproduction.png" alt="Post-Producción Elite" loading="lazy">
+          </div>
           <div class="service-icon-wrapper">
             <svg
               viewBox="0 0 24 24"
@@ -2235,6 +2269,9 @@
         </div>
         <!-- Service 5 -->
         <div class="service-card glow-card">
+          <div class="service-card-image">
+            <img src="./service_mapping.png" alt="Mapeo de Propiedades" loading="lazy">
+          </div>
           <div class="service-icon-wrapper">
             <svg
               viewBox="0 0 24 24"
@@ -2258,6 +2295,9 @@
         </div>
         <!-- Service 6 -->
         <div class="service-card glow-card">
+          <div class="service-card-image">
+            <img src="./service_express.png" alt="Entrega Express" loading="lazy">
+          </div>
           <div class="service-icon-wrapper">
             <svg
               viewBox="0 0 24 24"
@@ -2283,7 +2323,7 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="section reveal">
       <div class="section-header">
-        <h2 class="section-title">Portafolio de Propiedades</h2>
+        <h2 class="section-title">Proyectos Destacados</h2>
         <p class="section-subtitle">
           Explora proyectos destacados de bienes raíces residenciales y
           comerciales capturados por nuestras lentes.
@@ -2632,7 +2672,7 @@
               Listing Pro
             </h3>
             <div class="package-price" style="font-size: 2.6rem; display: flex; flex-direction: column; align-items: flex-start; line-height: 1.1;">
-              <span style="font-size: 0.9rem; font-weight: 400; color: #070a13; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.2rem;">Desde</span>
+              <span style="font-size: 0.9rem; font-weight: 400; color: #050c07; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.2rem;">Desde</span>
               <span>RD$22,500</span>
             </div>
           </div>
