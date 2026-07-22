@@ -800,15 +800,15 @@
 
       .portfolio-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
       }
 
       .portfolio-item {
         position: relative;
         border-radius: 12px;
         overflow: hidden;
-        height: 380px;
+        height: 480px;
         cursor: pointer;
         transition: var(--transition-smooth);
         border: 1px solid var(--border-color);
@@ -2032,9 +2032,13 @@
         }
 
         .services-grid,
-        .portfolio-grid,
         .packages-grid {
           grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
+        .portfolio-grid {
+          grid-template-columns: repeat(2, 1fr);
           gap: 1.5rem;
         }
 
@@ -2058,7 +2062,7 @@
         }
 
         .portfolio-item {
-          height: 320px;
+          height: 350px;
         }
 
         .portfolio-content {
@@ -2448,167 +2452,7 @@
 
       <!-- Portfolio Grid -->
       <div class="portfolio-grid">
-        <!-- Item 1 (Villas de Lujo) -->
-        <div
-          class="portfolio-item"
-          data-category="villas"
-          onclick="openModal('FQ5VXOfavcM')"
-        >
-          <div class="portfolio-image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
-              alt="Villa Coral Blue"
-              class="portfolio-image"
-              loading="lazy"
-            />
-          </div>
-          <button class="portfolio-play-btn" aria-label="Reproducir video">
-            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-          </button>
-          <div class="portfolio-content">
-            <span class="portfolio-tag">Villa de Lujo</span>
-            <h3>Villa Coral Blue</h3>
-            <p>
-              Punta Cana - Residencia de lujo con frente al mar y piscina
-              infinita panorámica.
-            </p>
-          </div>
-        </div>
-
-        <!-- Item 2 (Condominios) -->
-        <div
-          class="portfolio-item"
-          data-category="condos"
-          onclick="openModal('FQ5VXOfavcM')"
-        >
-          <div class="portfolio-image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop"
-              alt="Penthouse Vista Mar"
-              class="portfolio-image"
-              loading="lazy"
-            />
-          </div>
-          <button class="portfolio-play-btn" aria-label="Reproducir video">
-            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-          </button>
-          <div class="portfolio-content">
-            <span class="portfolio-tag">Condominio</span>
-            <h3>Penthouse Vista Mar</h3>
-            <p>
-              Las Terrenas - Apartamento dúplex exclusivo con jacuzzi en terraza
-              exterior.
-            </p>
-          </div>
-        </div>
-
-        <!-- Item 3 (Villas de Lujo) -->
-        <div
-          class="portfolio-item"
-          data-category="villas"
-          onclick="openModal('FQ5VXOfavcM')"
-        >
-          <div class="portfolio-image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=800&auto=format&fit=crop"
-              alt="Hacienda Jarabacoa"
-              class="portfolio-image"
-              loading="lazy"
-            />
-          </div>
-          <button class="portfolio-play-btn" aria-label="Reproducir video">
-            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-          </button>
-          <div class="portfolio-content">
-            <span class="portfolio-tag">Villa de Lujo</span>
-            <h3>Hacienda Jarabacoa</h3>
-            <p>
-              Jarabacoa - Finca de montaña con arquitectura bioclimática y
-              vistas espectaculares.
-            </p>
-          </div>
-        </div>
-
-        <!-- Item 4 (Condominios) -->
-        <div
-          class="portfolio-item"
-          data-category="condos"
-          onclick="openModal('FQ5VXOfavcM')"
-        >
-          <div class="portfolio-image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop"
-              alt="Torre Blue Horizon"
-              class="portfolio-image"
-              loading="lazy"
-            />
-          </div>
-          <button class="portfolio-play-btn" aria-label="Reproducir video">
-            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-          </button>
-          <div class="portfolio-content">
-            <span class="portfolio-tag">Condominio / Comercial</span>
-            <h3>Torre Blue Horizon</h3>
-            <p>
-              Santo Domingo - Capturas arquitectónicas de rascacielos con
-              helipuerto privado.
-            </p>
-          </div>
-        </div>
-
-        <!-- Item 5 (Desarrollos y Terrenos) -->
-        <div
-          class="portfolio-item"
-          data-category="desarrollos"
-          onclick="openModal('FQ5VXOfavcM')"
-        >
-          <div class="portfolio-image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop"
-              alt="Reserva del Atlántico"
-              class="portfolio-image"
-              loading="lazy"
-            />
-          </div>
-          <button class="portfolio-play-btn" aria-label="Reproducir video">
-            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-          </button>
-          <div class="portfolio-content">
-            <span class="portfolio-tag">Desarrollo y Terrenos</span>
-            <h3>Reserva del Atlántico</h3>
-            <p>
-              Cabarete - Modelado de linderos y fotografía topográfica para
-              proyecto de 50 hectáreas.
-            </p>
-          </div>
-        </div>
-
-        <!-- Item 6 (Villas de Lujo) -->
-        <div
-          class="portfolio-item"
-          data-category="villas"
-          onclick="openModal('FQ5VXOfavcM')"
-        >
-          <div class="portfolio-image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?q=80&w=800&auto=format&fit=crop"
-              alt="Golf & Beach Estate"
-              class="portfolio-image"
-              loading="lazy"
-            />
-          </div>
-          <button class="portfolio-play-btn" aria-label="Reproducir video">
-            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-          </button>
-          <div class="portfolio-content">
-            <span class="portfolio-tag">Villa de Lujo</span>
-            <h3>Golf & Beach Estate</h3>
-            <p>
-              Casa de Campo - Mansión con vistas directas al campo de golf de
-              campeonato y playa.
-            </p>
-          </div>
-        </div>
+        <!-- Dynamic portfolio items will be loaded here via JavaScript -->
       </div>
     </section>
 
@@ -2616,6 +2460,12 @@
     <div id="videoModal" class="modal" onclick="closeModal(event)">
       <button class="modal-close" onclick="closeModal(event)">×</button>
       <div class="modal-content" onclick="event.stopPropagation()">
+        <img
+          id="lightboxImage"
+          src=""
+          style="display: none; width: 100%; height: 100%; object-fit: contain; background: #000;"
+          alt="Lightbox Preview"
+        />
         <iframe
           id="videoFrame"
           src=""
@@ -3594,6 +3444,135 @@
 
     <!-- Scripts -->
     <script>
+      // Portfolio dynamic rendering
+      const portfolioImages = [
+        "portfolio/anacaona_condo_1784729848779.png",
+        "portfolio/beachfront_dev_1784730338983.png",
+        "portfolio/cap_cana_estate_1784729648493.png",
+        "portfolio/casa_campo_mansion_1784729628838.png",
+        "portfolio/juan_dolio_mansion_1784729665382.png",
+        "portfolio/las_terrenas_mountain_1784729656996.png",
+        "portfolio/mixed_use_dev_1784730346869.png",
+        "portfolio/naco_luxury_tower_1784729859219.png",
+        "portfolio/piantini_tower_1784729839021.png",
+        "portfolio/punta_cana_beachfront_1784729640558.png",
+        "portfolio/residential_dev_1784730329791.png",
+        "portfolio/samana_ocean_estate_1784729675184.png",
+        "portfolio/tower_construction_1784730311382.png",
+        "portfolio/villa_construction_1784730318830.png"
+      ];
+
+      function getInfoFromFilename(filename) {
+        const base = filename.split('/').pop().split('.').shift().replace(/_\d+$/, '');
+        
+        let title = "";
+        let category = "";
+        let tag = "";
+        let location = "";
+        
+        if (base === "anacaona_condo") {
+          title = "Anacaona Condo";
+          category = "condos";
+          tag = "Condominio";
+          location = "Anacaona, Santo Domingo";
+        } else if (base === "cap_cana_estate") {
+          title = "Cap Cana Estate";
+          category = "villas";
+          tag = "Villa de Lujo";
+          location = "Cap Cana";
+        } else if (base === "casa_campo_mansion") {
+          title = "Casa de Campo Mansion";
+          category = "villas";
+          tag = "Villa de Lujo";
+          location = "Casa de Campo, La Romana";
+        } else if (base === "juan_dolio_mansion") {
+          title = "Juan Dolio Mansion";
+          category = "villas";
+          tag = "Villa de Lujo";
+          location = "Juan Dolio";
+        } else if (base === "las_terrenas_mountain") {
+          title = "Las Terrenas Mountain";
+          category = "desarrollos";
+          tag = "Desarrollo y Terrenos";
+          location = "Las Terrenas, Samaná";
+        } else if (base === "naco_luxury_tower") {
+          title = "Naco Luxury Tower";
+          category = "condos";
+          tag = "Condominio";
+          location = "Naco, Santo Domingo";
+        } else if (base === "piantini_tower") {
+          title = "Piantini Tower";
+          category = "condos";
+          tag = "Condominio";
+          location = "Piantini, Santo Domingo";
+        } else if (base === "punta_cana_beachfront") {
+          title = "Punta Cana Beachfront";
+          category = "villas";
+          tag = "Villa de Lujo";
+          location = "Punta Cana";
+        } else if (base === "samana_ocean_estate") {
+          title = "Samaná Ocean Estate";
+          category = "villas";
+          tag = "Villa de Lujo";
+          location = "Samaná";
+        } else if (base === "beachfront_dev") {
+          title = "Beachfront Development";
+          category = "desarrollos";
+          tag = "Desarrollo y Terrenos";
+          location = "Cabarete";
+        } else if (base === "mixed_use_dev") {
+          title = "Mixed-Use Development";
+          category = "desarrollos";
+          tag = "Desarrollo y Terrenos";
+          location = "Santo Domingo";
+        } else if (base === "residential_dev") {
+          title = "Residential Development";
+          category = "desarrollos";
+          tag = "Desarrollo y Terrenos";
+          location = "Punta Cana";
+        } else if (base === "tower_construction") {
+          title = "Tower Construction";
+          category = "desarrollos";
+          tag = "Desarrollo y Terrenos";
+          location = "Piantini, Santo Domingo";
+        } else if (base === "villa_construction") {
+          title = "Villa Construction";
+          category = "desarrollos";
+          tag = "Desarrollo y Terrenos";
+          location = "Casa de Campo, La Romana";
+        } else {
+          const words = base.split('_');
+          title = words.map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+          category = "villas";
+          tag = "Villa de Lujo";
+          location = title;
+        }
+        
+        return { title, category, tag, location };
+      }
+
+      // Render items dynamically
+      const portfolioGrid = document.querySelector(".portfolio-grid");
+      if (portfolioGrid) {
+        portfolioGrid.innerHTML = "";
+        portfolioImages.forEach(imagePath => {
+          const info = getInfoFromFilename(imagePath);
+          const itemHTML = `
+            <div class="portfolio-item" data-category="${info.category}" onclick="openModal('${imagePath}', true)">
+              <div class="portfolio-image-wrapper">
+                <img src="${imagePath}" alt="${info.title}" class="portfolio-image" loading="lazy" />
+              </div>
+              <div class="portfolio-content">
+                <span class="portfolio-tag">${info.tag}</span>
+                <h3>${info.title}</h3>
+                <p>Captura profesional en ${info.location}.</p>
+              </div>
+            </div>
+          `;
+          portfolioGrid.insertAdjacentHTML("beforeend", itemHTML);
+        });
+      }
+
       // Parallax & Drone tracking variables
       let lastScrollY = window.scrollY;
       let droneTimeout;
@@ -3909,23 +3888,60 @@
         });
       });
 
-      // Video Modal Open/Close with Smooth Transitions
-      function openModal(videoId) {
+      // Modal Open/Close with Smooth Transitions
+      function openModal(source, isImage = false) {
         const modal = document.getElementById("videoModal");
         const videoFrame = document.getElementById("videoFrame");
         const localFallback = document.getElementById("localFallback");
+        const lightboxImage = document.getElementById("lightboxImage");
+        const modalContent = modal.querySelector(".modal-content");
         
-        const isLocalFile = window.location.protocol === 'file:';
-        
-        if (isLocalFile) {
+        if (isImage) {
+          // Hide video frame and fallback
           videoFrame.style.display = 'none';
-          localFallback.style.display = 'flex';
-          const fallbackLink = document.getElementById("fallbackLink");
-          fallbackLink.href = `https://www.youtube.com/watch?v=${videoId}`;
-        } else {
-          videoFrame.style.display = 'block';
           localFallback.style.display = 'none';
-          videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+          
+          // Show and set image
+          lightboxImage.src = source;
+          lightboxImage.style.display = 'block';
+          
+          // Style container for image
+          if (modalContent) {
+            modalContent.style.aspectRatio = 'auto';
+            modalContent.style.maxHeight = '85vh';
+            modalContent.style.width = 'auto';
+            modalContent.style.backgroundColor = 'transparent';
+            modalContent.style.border = 'none';
+            modalContent.style.boxShadow = 'none';
+          }
+          
+          // Style lightbox image itself
+          lightboxImage.style.borderRadius = '12px';
+          lightboxImage.style.boxShadow = 'var(--shadow-gold-large)';
+        } else {
+          // Hide image lightbox
+          if (lightboxImage) lightboxImage.style.display = 'none';
+          
+          if (modalContent) {
+            modalContent.style.aspectRatio = '16/9';
+            modalContent.style.maxHeight = '';
+            modalContent.style.width = '90%';
+            modalContent.style.backgroundColor = '#000';
+            modalContent.style.border = '1px solid var(--border-color)';
+            modalContent.style.boxShadow = 'var(--shadow-gold-large)';
+          }
+          
+          const isLocalFile = window.location.protocol === 'file:';
+          if (isLocalFile) {
+            videoFrame.style.display = 'none';
+            localFallback.style.display = 'flex';
+            const fallbackLink = document.getElementById("fallbackLink");
+            fallbackLink.href = `https://www.youtube.com/watch?v=${source}`;
+          } else {
+            videoFrame.style.display = 'block';
+            localFallback.style.display = 'none';
+            videoFrame.src = `https://www.youtube.com/embed/${source}?autoplay=1`;
+          }
         }
 
         modal.style.display = "flex";
@@ -3941,11 +3957,27 @@
         const modal = document.getElementById("videoModal");
         const videoFrame = document.getElementById("videoFrame");
         const localFallback = document.getElementById("localFallback");
+        const lightboxImage = document.getElementById("lightboxImage");
         modal.classList.remove("active");
         setTimeout(() => {
           modal.style.display = "none";
           videoFrame.src = "";
           localFallback.style.display = "none";
+          if (lightboxImage) {
+            lightboxImage.src = "";
+            lightboxImage.style.display = "none";
+          }
+          // Restore default modalContent styles
+          const modalContent = modal.querySelector(".modal-content");
+          if (modalContent) {
+            modalContent.style.aspectRatio = '';
+            modalContent.style.maxHeight = '';
+            modalContent.style.width = '';
+            modalContent.style.height = '';
+            modalContent.style.backgroundColor = '';
+            modalContent.style.border = '';
+            modalContent.style.boxShadow = '';
+          }
         }, 400);
         document.body.style.overflow = "auto";
       }
